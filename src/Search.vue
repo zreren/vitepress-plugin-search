@@ -78,7 +78,7 @@ onMounted(async () => {
   INDEX_DATA.value = data.default.INDEX_DATA;
   PREVIEW_LOOKUP.value = data.default.PREVIEW_LOOKUP;
   Options.value = data.default.Options;
-  origin.value = window.location.origin + withBase(locale.value === 'root' ? '/' : locale.value);
+  origin.value = window.location.origin + "/";
   buttonLabel.value = Options.value?.buttonLabel || buttonLabel.value;
   placeholder.value = Options.value?.placeholder || placeholder.value;
 
